@@ -1,0 +1,6 @@
+<%= form_tag sessions_path, :class => 'form-signin', :role => 'form' do %>
+  <h2 class="form-signin-heading">Contacts Manager</h2>
+  <%= text_field_tag 'login', nil, :class => 'form-control', :placeholder => 'Login' %>
+  <%= password_field_tag 'password', nil, :class => 'form-control', :placeholder => 'Password' %>
+  <%= submit_tag 'Login', :class => 'btn btn-lg btn-primary btn-block' %>
+<% end %>

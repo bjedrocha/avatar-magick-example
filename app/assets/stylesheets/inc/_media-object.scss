@@ -1,0 +1,26 @@
+// Offer increased padding to media objects, the default is 10px
+
+.media-left.padding-lg,
+.media > .pull-left.padding-lg {
+	padding-right: 15px;
+}
+
+.media-left.padding-2x,
+.media > .pull-left.padding-2x {
+	padding-right: 20px;
+}
+
+.media-left.padding-3x,
+.media > .pull-left.padding-3x {
+	padding-right: 30px;
+}
+
+.media-left.padding-4x,
+.media > .pull-left.padding-4x {
+	padding-right: 40px;
+}
+
+.media-left.padding-5x,
+.media > .pull-left.padding-5x {
+	padding-right: 50px;
+}

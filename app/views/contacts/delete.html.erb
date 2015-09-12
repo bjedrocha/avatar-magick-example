@@ -1,0 +1,14 @@
+<div class="page-header">
+  <h3>Delete Contact</h3>
+</div>
+
+<div class="alert alert-warning">
+  <p>Are you sure you want to delete this contact? This action cannot be undone.</p>
+</div>
+
+<%= form_tag contact_path(@contact), :method => :delete do %>
+  <div class="form-actions">
+    <%= submit_tag 'Yes, Delete Contact', :class => 'btn btn-danger' %>
+    <%= link_to 'No', contact_path(@contact), :class => 'btn btn-default' %>
+  </div>
+<% end %>

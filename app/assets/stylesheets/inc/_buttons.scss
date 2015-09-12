@@ -1,0 +1,19 @@
+.btn-transborder {
+	border-color: transparent;
+
+	&:hover {
+		border-color: transparent;
+	}
+
+	&:active,
+	&.active {
+		border-color: transparent;
+		box-shadow: none;
+	}
+
+	&:active:hover,
+	&:active:focus,
+	&.active.focus {
+		border-color: transparent;
+	}
+}

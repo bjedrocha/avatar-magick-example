@@ -1,0 +1,16 @@
+// Page Header
+.page-header {
+	border-color: transparent;
+	position: relative;
+
+	.actions {
+		position: absolute;
+		right: 0px;
+		bottom: 14px;
+	}
+}
+
+// Media Object
+.media-body p {
+	margin: 0;
+}

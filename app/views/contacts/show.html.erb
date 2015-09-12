@@ -1,0 +1,29 @@
+<div class="page-header">
+  <h3>Contact Details</h3>
+  <div class="actions">
+    <%= link_to 'View All', contacts_path, class: 'btn btn-default btn-transborder' %>
+  </div>
+</div>
+
+<%= render :partial => 'shared/notice_or_error' %>
+
+<div class="media">
+  <div class="media-left padding-4x media-middle">
+    <img src="http://placehold.it/150x150" alt="" class="media-object img-circle">
+  </div>
+  <div class="media-body media-middle">
+    <h4>Full Name</h4>
+    <%= @contact.full_name %>
+
+    <h4>Email</h4>
+    <%= @contact.email %>
+
+    <h4>Phone Number</h4>
+    <%= @contact.phone_number %>
+  </div>
+</div>
+
+<div class="form-actions">
+  <%= link_to 'Edit Contact', edit_contact_path(@contact), :class => 'btn btn-primary' %>
+  <%= link_to 'Delete Contact', delete_contact_path(@contact), :class => 'btn btn-default' %>
+</div>

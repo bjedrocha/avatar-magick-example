@@ -1,0 +1,9 @@
+<div class="page-header">
+  <h3>Edit Contact</h3>
+</div>
+
+<%= render :partial => "shared/validation_errors", :locals => {:target => @contact} %>
+
+<%= form_for @contact, :html => { :role => 'form' } do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f, :submit_text => 'Update Contact', :cancel_link => contact_path(@contact) } %>
+<% end %>
