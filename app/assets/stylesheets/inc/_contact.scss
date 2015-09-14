@@ -1,0 +1,15 @@
+.contact-name {
+	width: auto;
+
+	@media (min-width: $screen-sm-min) {
+		width: 40%;
+	}
+}
+
+.contact-email {
+	width: 40%;
+}
+
+.contact-phone {
+	width: 20%;
+}
