@@ -14,6 +14,9 @@
 # Ingore .ruby-gemset
 .ruby-gemset
 
+# Ignore /public/system
+/public/system/*
+
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
