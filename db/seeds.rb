@@ -7,4 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Create a default user
-User.create(login: 'tdurden', password: 'password', password_confirmation: 'password')
+user = User.create(login: 'tdurden', password: 'password', password_confirmation: 'password')
+
+# Create a couple of contacts
+user.contacts.create(first_name: 'Linda', last_name: 'Benjamin', email: 'lbenjamin@example.com', phone_number: '555-545-4554')
+user.contacts.create(first_name: 'Vera', last_name: 'Farmiga', email: 'vfarmiga@example.com', phone_number: '555-523-3256')
+user.contacts.create(first_name: 'Bart', last_name: 'Jedrocha', email: 'bjedrocha@example.com')
+user.contacts.create(first_name: 'Brad', last_name: 'Mendosi', email: 'bmendosi@example.com', phone_number: '289-555-5555')
+user.contacts.create(first_name: 'Mary', last_name: 'Swanson', email: 'mswanson@example.com')
