@@ -10,7 +10,7 @@
   <%= link_to contact_path(contact), class: 'list-group-item' do %>
     <div class="media">
       <div class="media-left padding-3x media-middle">
-        <%= image_tag contact.avatar_url, class: 'media-object img-circle', style: 'width:64px;height:64px;' %>
+        <%= contact_avatar(contact, class: 'media-object img-circle', style: 'width:64px;height:64px;') %>
       </div>
       <div class="media-body media-middle contact-name">
         <p><strong><%= contact.full_name %></strong></p>

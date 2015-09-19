@@ -1,3 +1,8 @@
 .form-actions {
 	margin-top: 50px;
 }
+
+input[readonly] {
+  	background-color: white !important;
+  	cursor: text !important;
+}
