@@ -1,5 +1,8 @@
 class Contact < ActiveRecord::Base
+  extend Dragonfly::Model
   include Avatarable
+
+  dragonfly_accessor :photo
 
   # associations
   belongs_to :user
