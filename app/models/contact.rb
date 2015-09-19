@@ -1,6 +1,9 @@
 class Contact < ActiveRecord::Base
   include Avatarable
 
+  # paperclip attachment
+  has_attached_file :photo
+
   # associations
   belongs_to :user
 

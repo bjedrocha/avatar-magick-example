@@ -32,6 +32,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'dragonfly', '~> 1.0.11'
 gem 'avatar_magick', '~> 1.0.1'
 
+# Paperclip for file attachments
+gem 'paperclip', '~> 4.3'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
