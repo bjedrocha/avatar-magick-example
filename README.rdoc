@@ -1,28 +1,13 @@
-== README
+A sample Rails application showing how to use the [avatar_magick](https://github.com/bjedrocha/avatar_magick) plugin to generate initial avatars. Please see [this blog post](http://bjedrocha.com/rails/2016/01/06/gmail-style-avatars-with-avatar-magick/) for more information.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Running the application
 
-Things you may want to cover:
+Clone the repo. Run `bundle install` to install required gems. Run `rake db:setup` to create a default user account and to seed a couple of contacts. Run with `rails s`. The default user account and password is `tdurden / password`.
 
-* Ruby version
+### Branches
 
-* System dependencies
+There are 3 branches in this project. The [master](https://github.com/bjedrocha/avatar-magick-example/tree/master) branch shows the simplest use case of just generating initial avatars. The [dragonfly-attachments](https://github.com/bjedrocha/avatar-magick-example/tree/dragonfly-attachments) branch shows how to handle image attachments using [Dragonfly](http://markevans.github.io/dragonfly/) while defaulting to initial avatars. Finally, the [paperclip-attachments](https://github.com/bjedrocha/avatar-magick-example/tree/paperclip-attachments) branch is similar but uses [paperclip](https://github.com/thoughtbot/paperclip) to handle image attachments.
 
-* Configuration
+#### Note
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+You must run `rake db:reset` when switching branches as the schema for dragonfly attachments is different than the schema for paperclip-attachments.
