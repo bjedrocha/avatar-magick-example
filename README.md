@@ -1,4 +1,4 @@
-A sample Rails application showing how to use the [avatar_magick](https://github.com/bjedrocha/avatar_magick) plugin to generate initial avatars. Please see [this blog post](http://bjedrocha.com/rails/2016/01/06/gmail-style-avatars-with-avatar-magick/) for more information.
+A sample Rails application showing how to use the [avatar_magick](https://github.com/bjedrocha/avatar_magick) plugin to generate initial avatars. Please see [this blog post](http://bjedrocha.com/rails/2016/01/06/default-gmail-style-avatars-in-rails/) for more information.
 
 ### Running the application
 
